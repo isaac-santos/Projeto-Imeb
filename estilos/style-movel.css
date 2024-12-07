@@ -25,6 +25,7 @@ header {
     height: 156px;
     position: sticky;
     top: 0;
+    z-index: 1;
 }
 
 .logo {
@@ -34,6 +35,7 @@ header {
     width: 150px;
     z-index: 2;
     border-radius: 20%;
+    transition: border-radius .7s;
 }
 
 .hamburger {
@@ -75,7 +77,7 @@ nav {
     clip-path: circle(0% at 100% 0%);
     transition: clip-path .9s ease-in-out;
     z-index: 1;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 
@@ -130,6 +132,10 @@ nav.abrir {
 
 nav.abrir .menu-lista a {
     opacity: 1;
+}
+
+.logo.ativo {
+    border-radius: 50%;
 }
 
 .hamburger.ativo {
