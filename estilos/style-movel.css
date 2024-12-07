@@ -1,0 +1,144 @@
+@charset "UTF-8";
+
+
+/* Geral */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* Cores */
+    --cor0:#0E552C;
+    --cor1:#22D46C;
+    --cor2:#1CB25B;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #1CB25B;
+    height: 206px;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    position: fixed;
+    top: 1px;
+    left: 5px;
+    width: 200px;
+    z-index: 2;
+    border-radius: 20%;
+}
+
+.hamburger {
+    position: fixed;
+    top: 90px;
+    right: 40px;
+    border: none;
+    background: none;
+    border-top: 3px solid #fff;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: " ";
+  display: block;
+  width: 30px;
+  height: 3px;
+  background: #fff;
+  margin-top: 5px;
+  position: relative;
+  transition: 0.3s;
+}
+
+.hamburger:hover {
+    transform: scale(1.2);
+    transition: all .4s;    
+}
+
+nav {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    background-color: var(--cor2);
+    margin-inline: auto;
+    text-align: center;
+    clip-path: circle(0% at 100% 0%);
+    transition: clip-path .9s ease-in-out;
+    z-index: 1;
+}
+
+
+.menu-lista {
+    font-size: 2em;
+    margin-top: 220px;
+}
+
+.menu-lista li {
+    padding-top: 60px;
+}
+
+.menu-lista a {
+    color: white;
+    opacity: 0;
+}
+
+.menu-lista li:nth-child(1) a {
+    transition: 0.5s 0.2s;
+}
+
+.menu-lista li:nth-child(2) a {
+    transition: 0.5s 0.4s;
+}
+
+.menu-lista li:nth-child(3) a {
+    transition: 0.5s 0.6s;
+}
+
+.menu-lista li:nth-child(4) a {
+    transition: 0.5s 0.8s;
+}
+
+.menu-lista li:nth-child(5) a {
+    transition: 0.5s 1.2s;
+}
+
+.menu-lista a:hover {
+    background-color: white;
+    color: #0E552C;
+    padding-block: 20px;
+    padding-inline: 200px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.267);
+    transition: all .3s;
+}
+
+/* Menu ativo */
+
+nav.abrir {
+    clip-path: circle(150% at 50% 50%);
+}
+
+nav.abrir .menu-lista a {
+    opacity: 1;
+}
+
+.hamburger.ativo {
+    border-top-color: transparent;
+}
+
+.hamburger.ativo::before {
+    transform: rotate(135deg);
+}
+
+.hamburger.ativo::after {
+    transform: rotate(-135deg);
+    top: -7px;
+}
