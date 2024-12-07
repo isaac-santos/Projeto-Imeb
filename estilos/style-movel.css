@@ -74,6 +74,7 @@ nav {
     clip-path: circle(0% at 100% 0%);
     transition: clip-path .9s ease-in-out;
     z-index: 1;
+    overflow-y: scroll;
 }
 
 
