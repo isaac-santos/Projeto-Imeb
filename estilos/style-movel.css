@@ -26,7 +26,7 @@ header {
     height: 130px;
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 11;
 }
 
 .logo {
@@ -152,22 +152,15 @@ nav.abrir .menu-lista a {
     top: -7px;
 }
 
-.swiper.invisible {
-    opacity: 0;
-    pointer-events: none;
-}
+
 
 /* conteúdo */
 .swiper {
     background: rgba(252, 230, 201, 0.075);
-    opacity: 1;
-    transition: opacity .5s ease;
-    z-index: 1;
 }
 
 .swiper-slide {
     text-align: center;
-    z-index: 0;
 }
 
 .slide-img {
