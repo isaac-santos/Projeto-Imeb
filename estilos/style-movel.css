@@ -185,7 +185,7 @@ nav.abrir .menu-lista a {
 /*Whatsapp*/
 .zap {
     position: fixed;
-    bottom: 110px;
+    bottom: 98px;
     right: 5px;
     background-image: linear-gradient(to right, green, white);
     height: 60px;
