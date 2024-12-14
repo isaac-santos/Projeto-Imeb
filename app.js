@@ -10,13 +10,13 @@ function toggleMenu() {
         hamburger.classList.toggle('ativo');
 
         if (isMenuOpen) {
-            
+            // Menu aberto, desabilita interações com o swiper
             swiper.classList.add('invisible');
         } else {
-            
+            // Menu fechado, habilita interações com o swiper após atraso
             setTimeout(() => {
                 swiper.classList.remove('invisible');
-            }, 500);
+            }, 500); // Atraso para que o menu tenha tempo de abrir
         }
     }
 }

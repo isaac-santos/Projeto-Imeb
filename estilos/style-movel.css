@@ -34,7 +34,7 @@ header {
     top: 1px;
     left: 5px;
     width: 150px;
-    z-index: 2;
+    z-index: 11;
     border-radius: 20%;
     transition: border-radius .7s;
 }
@@ -47,7 +47,7 @@ header {
     background: none;
     border-top: 3px solid #fff;
     cursor: pointer;
-    z-index: 5;
+    z-index: 11;
 }
 
 .hamburger::before,
@@ -77,8 +77,9 @@ nav {
     text-align: center;
     clip-path: circle(0% at 100% 0%);
     transition: clip-path .9s ease-in-out;
-    z-index: 1;
+    z-index: 10;
     overflow-y: auto;
+    pointer-events: auto;
 }
 
 
@@ -95,6 +96,7 @@ nav {
 .menu-lista a {
     color: white;
     opacity: 0;
+    pointer-events: auto;
 }
 
 .menu-lista li:nth-child(1) a {
@@ -121,7 +123,8 @@ nav {
     background-color: white;
     color: #0E552C;
     padding-block: 20px;
-    padding-inline: 200px;
+    padding-inline: 5px;
+    border-radius: 8px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.267);
     transition: all .2s;
 }
@@ -151,6 +154,7 @@ nav.abrir .menu-lista a {
 
 .swiper.invisible {
     opacity: 0;
+    pointer-events: none;
 }
 
 /* conteúdo */
@@ -158,6 +162,7 @@ nav.abrir .menu-lista a {
     background: rgba(252, 230, 201, 0.075);
     opacity: 1;
     transition: opacity .5s ease;
+    z-index: 1;
 }
 
 .swiper-slide {
