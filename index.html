@@ -4,21 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Imeb</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="estilos/style-movel.css">
-
-    <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="shortcut icon" href="imagens/Imeb-logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/style-movel.css">    
 
     <script src="app.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
 <body>
     <header id="cabecalho">
         <a href="home.html">
-            <img src="imagens/Imeb-logo.jpg" alt="Logo Imeb"  class="logo">
+            <img src="imagens/Imeb-logo-Photoroom.png" alt="Logo Imeb"  class="logo">
         </a>
         <button class="hamburger" onclick="toggleMenu()"></button>
         <nav>
@@ -32,11 +29,32 @@
         </nav>
     </header>
     <main>
-        <section class="apresentação">
-            <div>
-                <legend><img src="" alt=""></legend>
-            </div>
+        <section>
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide" data-swiper-autoplay="4000"><img class="slide-img" src="imagens/image.psd.jpg" alt="bem-vindo"></div>
+                  <div class="swiper-slide" data-swiper-autoplay="4000"><img class="slide-img" src="" alt="consultórios"></div>
+                  <div class="swiper-slide" data-swiper-autoplay="4000"><img class="slide-img" src="imagens/image3.psd.jpg" alt="Sala-com-maca"></div>
+                  <div class="swiper-slide" data-swiper-autoplay="4000"><img class="slide-img" src="" alt="Convênios-atendidos"></div>
+                  ...
+                </div>
+                <!-- If we need pagination 
+                <div class="swiper-pagination"></div>
+                -->
+              
+                <!-- If we need navigation buttons 
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                -->
+              
+                <!-- If we need scrollbar 
+                <div class="swiper-scrollbar"></div>
+                -->
+              </div>
         </section>
     </main>
+    
 </body>
 </html>
