@@ -185,7 +185,7 @@ nav.abrir .menu-lista a {
 /*Whatsapp*/
 .zap {
     position: fixed;
-    bottom: 98px;
+    bottom: 94px;
     right: 5px;
     background-image: linear-gradient(to right, green, white);
     height: 60px;
@@ -198,6 +198,12 @@ nav.abrir .menu-lista a {
 
 .zap:hover {
     transform: scale(1.2);
+}
+
+@media (min-width: 359px) and (max-width: 575px) {
+    .zap {
+        bottom: 79px;
+    }
 }
 
 /*Configuração do rodapé*/
