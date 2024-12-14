@@ -10,7 +10,6 @@
 }
 
 html, body {
-    height: 100%;
     display: flex; /* Configura o body como um contêiner flexível */
     flex-direction: column;
 }
@@ -43,7 +42,6 @@ header {
     width: 150px;
     z-index: 11;
     border-radius: 20%;
-    transition: border-radius .7s;
 }
 
 .hamburger {
@@ -165,6 +163,7 @@ nav.abrir .menu-lista a {
 
 
 /*Configuração de conteúdo*/
+
 .swiper {
     background: rgba(252, 230, 201, 0.075);
 }
@@ -177,12 +176,124 @@ nav.abrir .menu-lista a {
     width: 100vw;
     height: 250px;
 }
+/*Assunto*/
 
-#conteudo {
-    margin-bottom: 10px;
+.conteudo {
+
 }
 
-/*Whatsapp*/
+.apresenta {
+    text-align: center;    
+    color: var(--cor0);
+    
+}
+
+.apresenta > h1, h2 {
+    padding: 10px;
+    background-image: linear-gradient(to right, var(--cor3), white);
+}
+
+.apresenta > p {
+    display: block;
+    text-align: justify;
+    text-indent: 20px;
+    line-height: 22px;
+    padding: 12px;
+    color: black;
+}
+
+.orientacao {    
+    background-image: linear-gradient(to bottom, rgba(0, 128, 0, 0.575), rgba(43, 235, 43, 0.144));
+    padding: 5px;
+}
+
+.orient-img {
+    border: 2px solid var(--cor0);
+    border-radius: 8px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.397);
+    width: 310px;
+    margin-block: 8px;
+}
+
+.orient-box {
+    height: 200px;
+    max-width: 340px;
+    border-radius: 8px;
+    border: 2px solid var(--cor0);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.397);
+    margin-block: 8px;
+    backdrop-filter: blur(2px);
+    padding: 10px;
+}
+
+.orient-itens {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2px;
+}
+
+.orient-itens > h3 {
+    color: var(--cor0);
+}
+
+.orient-itens-hr {
+    font-weight: bold;
+}
+
+.orient-itens-hr ol {
+    list-style: none;
+    display: inline-block;
+    margin-inline: 16px;
+}
+
+.orient-itens-hr > ol > li {
+    margin-block: 10px;
+}
+
+
+/*Contatos*/
+
+#sub-contato {
+    padding: 10px;
+}
+
+#sub-contato > h2 {
+    background: none;
+    text-align: center;
+}
+
+#contato-container {
+    display: inline-flex;
+}
+
+#contato-inst {
+    background-image: linear-gradient(to left, rgb(83, 128, 0), white);
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+    border-radius: 50%;
+    margin-inline: 20px;
+}
+
+#contato-face {
+    background-color: rgb(22, 148, 106);
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+    border-radius: 50%;
+    margin-inline: 20px;
+}
+
+.contato-item {
+    height: 50px;
+    width: 50px;
+    transition: all .4s;
+}
+
+.contato-item:hover {
+    transform: scale(1.1);
+}
+
 .zap {
     position: fixed;
     bottom: 94px;
@@ -210,7 +321,7 @@ nav.abrir .menu-lista a {
 #rodape {
     position: relative;
     width: 100%;
-    border: 1px solid var(--cor0);
+    margin-top: 5px;
     z-index: 1;
 }
 
