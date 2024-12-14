@@ -6,6 +6,13 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    display: flex; /* Configura o body como um contêiner flexível */
+    flex-direction: column;
 }
 
 :root {
@@ -130,6 +137,9 @@ nav {
 }
 
 /* Menu ativo */
+main {
+    flex: 1;
+}
 
 nav.abrir {
     clip-path: circle(150% at 50% 50%);
@@ -154,7 +164,7 @@ nav.abrir .menu-lista a {
 
 
 
-/* conteúdo */
+/*Configuração de conteúdo*/
 .swiper {
     background: rgba(252, 230, 201, 0.075);
 }
@@ -166,4 +176,49 @@ nav.abrir .menu-lista a {
 .slide-img {
     width: 100vw;
     height: 250px;
+}
+
+#conteudo {
+    margin-bottom: 10px;
+}
+
+/*Whatsapp*/
+.zap {
+    position: fixed;
+    bottom: 110px;
+    right: 5px;
+    background-image: linear-gradient(to right, green, white);
+    height: 60px;
+    width: 60px;
+    padding: 5px;
+    border-radius: 50%;
+    z-index: 5;
+    transition: transform .4s ease;
+}
+
+.zap:hover {
+    transform: scale(1.2);
+}
+
+/*Configuração do rodapé*/
+#rodape {
+    position: relative;
+    width: 100%;
+    border: 1px solid var(--cor0);
+    z-index: 1;
+}
+
+.rod-inicial {
+    background-color: white;
+    padding: 2px 0px;
+    text-align: center;
+    font-size: .9em;
+}
+
+.rod-final {
+    background-color: var(--cor0);
+    color: white;
+    padding: 1px 0px;
+    font-weight: bold;
+    text-align: center;
 }
