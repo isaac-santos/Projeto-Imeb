@@ -136,10 +136,6 @@ nav.abrir .menu-lista a {
     opacity: 1;
 }
 
-.logo.ativo {
-    border-radius: 50%;
-}
-
 .hamburger.ativo {
     border-top-color: transparent;
 }
@@ -153,13 +149,20 @@ nav.abrir .menu-lista a {
     top: -7px;
 }
 
+.swiper.invisible {
+    opacity: 0;
+}
+
 /* conteúdo */
 .swiper {
     background: rgba(252, 230, 201, 0.075);
+    opacity: 1;
+    transition: opacity .5s ease;
 }
 
 .swiper-slide {
     text-align: center;
+    z-index: 0;
 }
 
 .slide-img {

@@ -3,17 +3,25 @@
 function toggleMenu() {
     const nav = document.querySelector('nav');
     const hamburger = document.querySelector('.hamburger');
-    const logo = document.querySelector('.logo');
+    const swiper = document.querySelector('.swiper');
+
     if (nav && hamburger) {
-        
-        nav.classList.toggle('abrir');
-        
-        
+        const isMenuOpen = nav.classList.toggle('abrir');
         hamburger.classList.toggle('ativo');
 
-        logo.classList.toggle('ativo');
+        if (isMenuOpen) {
+            
+            swiper.classList.add('invisible');
+        } else {
+            
+            setTimeout(() => {
+                swiper.classList.remove('invisible');
+            }, 500);
+        }
     }
 }
+
+//Swiper
 
 document.addEventListener('DOMContentLoaded', () => {
     const swiper = new Swiper('.swiper', {
