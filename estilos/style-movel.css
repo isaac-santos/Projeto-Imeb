@@ -205,6 +205,9 @@ nav.abrir .menu-lista a {
 .orientacao {    
     background-image: linear-gradient(to bottom, rgba(0, 128, 0, 0.575), rgba(43, 235, 43, 0.144));
     padding: 5px;
+    
+    display: flex;
+    flex-flow: row wrap;
 }
 
 .orient-img {
@@ -212,16 +215,16 @@ nav.abrir .menu-lista a {
     border-radius: 8px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.397);
     width: 310px;
-    margin-block: 8px;
+    
 }
 
 .orient-box {
-    height: 200px;
+    height: 262px;
     max-width: 340px;
     border-radius: 8px;
     border: 2px solid var(--cor0);
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.397);
-    margin-block: 8px;
+    margin: 8px;
     backdrop-filter: blur(2px);
     padding: 10px;
 }
@@ -247,7 +250,7 @@ nav.abrir .menu-lista a {
 }
 
 .orient-itens-hr > ol > li {
-    margin-block: 10px;
+    margin-block: 16px;
 }
 
 
