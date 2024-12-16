@@ -208,6 +208,7 @@ nav.abrir .menu-lista a {
     
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-evenly;
 }
 
 .orient-img {
@@ -224,7 +225,6 @@ nav.abrir .menu-lista a {
     border-radius: 8px;
     border: 2px solid var(--cor0);
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.397);
-    margin: 8px;
     backdrop-filter: blur(2px);
     padding: 10px;
 }
