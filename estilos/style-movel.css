@@ -178,14 +178,11 @@ nav.abrir .menu-lista a {
 }
 /*Assunto*/
 
-.conteudo {
-
-}
-
 .apresenta {
+    background: url(../imagens/familia-sorrindo.jpg) right center no-repeat;
+    background-size: cover;
     text-align: center;    
     color: var(--cor0);
-    
 }
 
 .apresenta > h1, h2 {
@@ -195,11 +192,14 @@ nav.abrir .menu-lista a {
 
 .apresenta > p {
     display: block;
+    max-width: 900px;
     text-align: justify;
     text-indent: 20px;
     line-height: 22px;
     padding: 12px;
+    margin-inline: auto;
     color: black;
+    font-weight: 500;
 }
 
 .orientacao {    
@@ -256,17 +256,26 @@ nav.abrir .menu-lista a {
 
 /*Contatos*/
 
-#sub-contato {
-    padding: 10px;
+#contatos-container {
+    display: flex;
+    margin-block: 15px;
+    justify-content: space-around;
 }
 
-#sub-contato > h2 {
-    background: none;
-    text-align: center;
+#linha-vertical {
+    background-color: rgba(128, 128, 128, 0.411);
+    width: 2px;
+    border-radius: 50%;
 }
 
-#contato-container {
-    display: inline-flex;
+.contatos-organize {
+    display: flex;
+    flex-flow: column;
+}
+
+.contatos-organize-itens {
+    display: flex;
+    align-items: center;
 }
 
 #contato-inst {
@@ -275,7 +284,6 @@ nav.abrir .menu-lista a {
     height: 60px;
     padding: 5px;
     border-radius: 50%;
-    margin-inline: 20px;
 }
 
 #contato-face {
@@ -284,7 +292,6 @@ nav.abrir .menu-lista a {
     height: 60px;
     padding: 5px;
     border-radius: 50%;
-    margin-inline: 20px;
 }
 
 .contato-item {
@@ -300,7 +307,7 @@ nav.abrir .menu-lista a {
 .zap {
     position: fixed;
     bottom: 94px;
-    right: 5px;
+    right: 0px;
     background-image: linear-gradient(to right, green, white);
     height: 60px;
     width: 60px;
@@ -324,8 +331,15 @@ nav.abrir .menu-lista a {
 #rodape {
     position: relative;
     width: 100%;
-    margin-top: 5px;
+    margin-top: 50px;
     z-index: 1;
+}
+
+.diretor {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-bottom: 8px;
 }
 
 .rod-inicial {
