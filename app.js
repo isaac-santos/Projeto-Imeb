@@ -44,3 +44,30 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+//Data para imagens
+
+const hoje = new Date();
+const mesAtual = hoje.getMonth();
+const diaAtual= hoje.getDate();
+
+if(mesAtual === 8) {
+    document.getElementById('setembro').style.display ='block';
+}else if (mesAtual === 9) {
+    document.getElementById('outubro').style.display ='block';
+}else if (mesAtual === 10){
+    document.getElementById('novembro').style.display ='block';
+}else if (mesAtual === 11) {
+    if(diaAtual >= 23 && diaAtual  <= 27) {
+        document.getElementById('natal').style.display ='block';
+    }else if (diaAtual >= 28 && diaAtual <= 31) {
+        document.getElementById('ano-novo').style.display ='block';
+    }
+}else if (mesAtual === 0 && diaAtual === 1) {
+    document.getElementById('ano-novo').style.display = 'block';
+};
+
+
+
+
+
+

@@ -10,7 +10,7 @@
 }
 
 html, body {
-    display: flex; /* Configura o body como um contêiner flexível */
+    display: flex;
     flex-direction: column;
 }
 
@@ -29,7 +29,7 @@ a {
 /* Cabeçalho */
 header {
     background-color: #1CB25B;
-    height: 130px;
+    height: 110px;
     position: sticky;
     top: 0;
     z-index: 11;
@@ -160,8 +160,6 @@ nav.abrir .menu-lista a {
     top: -7px;
 }
 
-
-
 /*Configuração de conteúdo*/
 
 .swiper {
@@ -218,6 +216,12 @@ nav.abrir .menu-lista a {
     width: 310px;
     
 }
+
+#setembro {display: none;}
+#outubro {display: none;}
+#novembro {display: none;}
+#natal {display: none;}
+#ano-novo {display: none;}
 
 .orient-box {
     height: 262px;
@@ -276,6 +280,14 @@ nav.abrir .menu-lista a {
 .contatos-organize-itens {
     display: flex;
     align-items: center;
+}
+
+.contatos-organize-itens a {
+    color: black;
+}
+
+.contatos-organize-itens a:hover {
+    color: var(--cor1);
 }
 
 #contato-inst {
