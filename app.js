@@ -1,5 +1,6 @@
 "use strict";
 
+
 function toggleMenu() {
     const nav = document.querySelector('nav');
     const hamburger = document.querySelector('.hamburger');
@@ -11,6 +12,26 @@ function toggleMenu() {
     }
 }
 
+function adjustMenuOnResize() {
+    const nav = document.querySelector('nav');
+    const hamburger = document.querySelector('.hamburger');
+
+    if (window.innerWidth > 768) {
+        // Se a largura da tela for maior que 768px, mostrar o menu
+        nav.classList.add('abrir');
+        hamburger.classList.remove('ativo');  // Esconde o hambúrguer
+    } else {
+        // Se a largura da tela for menor que 768px, garantir que o menu hambúrguer seja visível
+        nav.classList.remove('abrir');
+        hamburger.classList.remove('ativo');  // Exibe o hambúrguer
+    }
+}
+
+// Event listener para redimensionamento da tela
+window.addEventListener('resize', adjustMenuOnResize);
+
+// Chamada para ajustar o menu quando a página for carregada
+window.addEventListener('DOMContentLoaded', adjustMenuOnResize);
 //Swiper
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -66,8 +87,19 @@ if(mesAtual === 8) {
     document.getElementById('ano-novo').style.display = 'block';
 };
 
+//Animação
 
+document.addEventListener('DOMContentLoaded', () => {
+    const elements = document.querySelectorAll('.fade-in-up');
 
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+                observer.unobserve(entry.target); // Para de observar depois que aparece
+            }
+        });
+    });
 
-
-
+    elements.forEach((el) => observer.observe(el));
+});
