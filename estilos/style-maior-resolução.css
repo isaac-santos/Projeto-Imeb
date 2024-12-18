@@ -1,0 +1,172 @@
+@charset "UTF-8";
+
+@media (min-width: 426px) and (max-width: 768px) {
+    .swiper {
+        height: 350px;
+    }
+
+    .swiper-slide,
+    .slide-img {
+        height: 350px;
+    }
+
+    .apresenta {
+        padding-bottom: 20px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .hamburger {
+        display: none;
+    }
+    
+    #cabecalho {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    .logo {
+        position: relative;
+        width: 150px;
+        z-index: 11;
+        border-radius: 20%;
+    }
+    
+    nav {
+        position: relative;
+        display: flex;
+        height: 110px;
+        justify-content: space-around;
+        font-size: .8em;
+    }
+
+    .menu-lista {
+        margin-top: 0;
+        display: flex;
+
+    }
+
+    .menu-lista li{
+        margin-top: 0;
+        margin-inline: 20px;
+    }
+
+    .swiper {
+        height: 350px;
+    }
+
+    .swiper-slide,
+    .slide-img {
+        height: 350px;
+    }
+
+    .apresenta {
+        padding-bottom: 20px;
+    }
+
+    #contatos-container {
+        justify-content: space-evenly;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+    header {
+        height: 120px;
+    }
+    
+    .hamburger {
+        display: none;
+    }
+    
+    #cabecalho {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    .logo {
+        position: relative;
+        width: 150px;
+        z-index: 11;
+        border-radius: 20%;
+    }
+    
+    nav {
+        position: relative;
+        display: flex;
+        height: 110px;
+        justify-content: space-around;
+        font-size: 1.1em;
+    }
+
+    .menu-lista {
+        margin-top: 0;
+        display: flex;
+
+    }
+
+    .menu-lista li{
+        margin-top: 0;
+        margin-inline: 20px;
+    }
+
+    .swiper {
+        height: 450px;
+    }
+
+    .swiper-slide,
+    .slide-img {
+        height: 450px;
+    }
+
+    .apresenta {
+        font-size: 1.3em;
+        padding-bottom: 50px;
+    }
+
+    #contatos-container {
+        justify-content: space-evenly;
+    }
+}
+
+@media (min-width: 1440px) {
+    
+    .swiper {
+        height: 450px;
+    }
+
+    .swiper-slide,
+    .slide-img {
+        height: 450px;
+    }
+
+    .apresenta {
+        font-size: 1.3em;
+        padding-bottom: 50px;
+    }
+
+    #contatos-container {
+        justify-content: space-evenly;
+    }
+
+    .orient-img {
+        border: 2px solid var(--cor0);
+        border-radius: 8px;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.397);
+        width: 350px;        
+    }
+
+    .orient-box {
+        height: 300px;
+        max-width: 340px;
+        padding: 10px;
+        font-size: 1.1em;
+    }
+
+    .contatos-organize {
+        font-size: 1.3em;
+    }
+
+    .diretor {
+        font-size: 1.1em;
+    }
+}

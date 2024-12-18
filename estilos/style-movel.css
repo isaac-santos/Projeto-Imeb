@@ -1,4 +1,14 @@
 @charset "UTF-8";
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 
 /* Geral */
@@ -257,6 +267,17 @@ nav.abrir .menu-lista a {
     margin-block: 16px;
 }
 
+/*animações*/
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 1s ease-in-out;
+}
+
+.fade-in-up.active {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 /*Contatos*/
 
