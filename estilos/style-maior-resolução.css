@@ -37,7 +37,7 @@
         display: flex;
         height: 110px;
         justify-content: space-around;
-        font-size: .8em;
+        font-size: .6em;
     }
 
     .menu-lista {
@@ -128,15 +128,54 @@
     }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1440px) and (max-width: 1999px) {
     
+    header {
+        height: 120px;
+    }
+    
+    .hamburger {
+        display: none;
+    }
+    
+    #cabecalho {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    .logo {
+        position: relative;
+        width: 150px;
+        z-index: 11;
+        border-radius: 20%;
+    }
+    
+    nav {
+        position: relative;
+        display: flex;
+        height: 104px;
+        justify-content: space-around;
+        font-size: 1.6em;
+    }
+
+    .menu-lista {
+        margin-top: 0;
+        display: flex;
+
+    }
+
+    .menu-lista li{
+        margin-top: 0;
+        margin-inline: 20px;
+    }
+
     .swiper {
-        height: 450px;
+        height: 550px;
     }
 
     .swiper-slide,
     .slide-img {
-        height: 450px;
+        height: 550px;
     }
 
     .apresenta {
@@ -152,7 +191,7 @@
         border: 2px solid var(--cor0);
         border-radius: 8px;
         box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.397);
-        width: 350px;        
+                
     }
 
     .orient-box {
@@ -163,10 +202,187 @@
     }
 
     .contatos-organize {
-        font-size: 1.3em;
+        font-size: 1.5em;
+    }
+
+    #contato-inst {
+        width: 80px;
+        height: 82px;
+        padding: 6px;
+    }
+    
+    #contato-face {
+        width: 80px;
+        height: 82px;
+        padding: 6px;
+    }
+
+    .contato-item {
+        height: 70px;
+        width: 70px;
+    }
+
+    .zap {
+        width: 70px;
+        height: 70px;
+        padding: 6px;
+    }
+
+    .zap-size {
+        height: 60px;
+        width: 60px;
     }
 
     .diretor {
+        font-size: 1.3em;
+    }
+    
+    .rod-inicial {
+        font-size: 1.2em;
+    }
+    
+    .rod-final {
         font-size: 1.1em;
+    }
+}
+
+@media (min-width: 2000px) {
+    header {
+        height: 200px;
+    }
+    
+    .hamburger {
+        display: none;
+    }
+    
+    #cabecalho {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    .logo {
+        position: relative;
+        width: 250px;
+        z-index: 11;
+        border-radius: 20%;
+    }
+    
+    nav {
+        position: relative;
+        display: flex;
+        height: 160px;
+        justify-content: space-around;
+        font-size: 2.3em;
+    }
+
+    .menu-lista {
+        margin-top: 15px;
+        display: flex;
+    }
+
+    .menu-lista li{
+        margin-top: 0;
+        margin-inline: 20px;
+    }
+
+    .swiper {
+        height: 860px;
+    }
+
+    .swiper-slide,
+    .slide-img {
+        height: 900px;
+    }
+
+    .apresenta {
+        font-size: 1.6em;
+        padding-bottom: 100px;
+    }
+
+    .apresenta > h1 {
+        margin-bottom: 10px;
+    }
+
+    #contatos-container {
+        justify-content: space-evenly;
+    }
+
+    .orient-img {
+        border: 2px solid var(--cor0);
+        border-radius: 8px;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.397);
+        height: 400px; 
+        width: 490px;       
+    }
+
+    .orient-box {
+        height: 400px;
+        width: 490px;
+        padding: 10px;
+        font-size: 1.1em;
+    }
+
+    .orient-itens {
+        font-size: 1.5em;
+    }
+
+    .orient-itens-hr {
+        font-size: 1.5em;
+    }
+
+    .contatos-organize {
+        font-size: 1.3em;
+    }
+
+    #contato-inst {
+        width: 100px;
+        height: 105px;
+        padding: 6px;
+    }
+    
+    #contato-face {
+        width: 100px;
+        height: 105px;
+        padding: 6px;
+    }
+
+    .contatos-organize {
+        font-size: 1.9em;
+    }
+
+    .contato-item {
+        height: 90px;
+        width: 90px;
+    }
+
+    .zap {
+        width: 100px;
+        height: 105px;
+        padding: 6px;
+    }
+
+    .zap-size {
+        height: 90px;
+        width: 90px;
+    }
+
+    .diretor {
+        font-size: 1.4em;
+    }
+
+    .rod-inicial {
+        background-color: white;
+        padding: 2px 0px;
+        text-align: center;
+        font-size: 1.5em;
+    }
+    
+    .rod-final {
+        background-color: var(--cor0);
+        color: white;
+        padding: 1px 0px;
+        font-weight: bold;
+        font-size: 1.3em;
+        text-align: center;
     }
 }

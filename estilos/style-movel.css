@@ -222,9 +222,9 @@ nav.abrir .menu-lista a {
 .orient-img {
     border: 2px solid var(--cor0);
     border-radius: 8px;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.397);
-    width: 310px;
-    
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.397); 
+    width: 304px; 
+    height: 308px;  
 }
 
 #setembro {display: none;}
@@ -234,8 +234,8 @@ nav.abrir .menu-lista a {
 #ano-novo {display: none;}
 
 .orient-box {
-    height: 262px;
-    max-width: 340px;
+    height: 300px;
+    width: 304px;
     border-radius: 8px;
     border: 2px solid var(--cor0);
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.397);
@@ -264,7 +264,7 @@ nav.abrir .menu-lista a {
 }
 
 .orient-itens-hr > ol > li {
-    margin-block: 16px;
+    margin-block: 25px;
 }
 
 /*animações*/
